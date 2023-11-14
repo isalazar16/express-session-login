@@ -17,6 +17,8 @@ app.set("views", "views");
 
 const sess = {
     secret: 'ausazko hitz multzoa',
+    resave: false,
+    saveUninitialized: true,
     cookie: {}
 }
 app.use(session(sess))
